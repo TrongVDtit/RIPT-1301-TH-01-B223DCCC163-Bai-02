@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+    <div class="form-container">
+        <h2>Đăng nhập</h2>
+    
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button onclick="chuyenweb()">Đăng nhập</button>
+    </div>
+    </div>
+<script>
+    var accountInfo = {
+        "trong1": "trong1",
+        "trong2": "trong2",
+        "trong3": "trong3",
+        "trong4": "trong4",
+        "trong5": "trong5"
+    };
+
+    function chuyenweb () {
+        var username= document.getElementById("username").value
+        var password= document.getElementById("password").value
+        kt=0
+        for (i in accountInfo) {
+            if (username== i && password== accountInfo[i]) {
+                window.location.href ="main2.html"
+                alert("chuyển trang web")
+                kt=1
+                break
+            }
+        }
+        if (kt==0) {
+            alert("Tài khoản mật khẩu không chính xác")
+        }
+    }
+</script>
+</body>
+</html>

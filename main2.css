@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+  }
+  
+  header {
+    background-repeat: no-repeat;
+    background-image: url(https://www.pinterest.com/pin/989173505638246552/);
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .about, .contact {
+    padding: 50px 0;
+  }
+  
+  .about {
+    background-color: #f8f9fa;
+  }
+  
+  .contact {
+    background-color: #e9ecef;
+  }
+  
+  footer {
+    background-image: ;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+.vetoi {
+  text-align: center;
+  align-items: center;
+  display: flex;
+} 
+
+.info_vetoi {
+  display: flex;
+}
+
+img {
+  margin: 0 80px;
+  width: 150px;
+}
+
+.lienhe {
+  display: flex;
+  align-items: center;
+  margin: 0 6px;
+}
